@@ -1,7 +1,4 @@
 #include <stdio.h>
-#include <stdio.h>
-
-using namespace std;
 
 int enumerate(int n, int array[]){
 
@@ -42,7 +39,7 @@ int better_enumerate(int n, int array[]){
 	return max;
 }
 
-int max_xffix(int n, int array[], bool pre){
+int max_xffix(int n, int array[], int pre){
 
 	int max = 0;
 	int aux = 0;
