@@ -108,12 +108,32 @@ int linear(int n, int array[]){
 
 int main(int argc, char **argv){
 
-	int array[] = {31, -41, 59, 26, -53, 58, 97, -93, -23, 84};
-	int n = 10;
+	/*
+	Expected results:
+	34
+	30
+	50
+	187
+	7
+	210
+	6
+	*/
 
-	int max = linear(n,array);
+	int array1[] = {1,4,-9,8,1,3,3,1,-1,-4,-6,2,8,19,-10,-11};
+	int array2[] = {2,9,8,6,5,-11,9,-11,7,5,-1,-8,-3,7,-2};
+	int array3[] = {10,-11,-1,-9,33,-45,23,24,-1,-7,-8,19};
+	int array4[] = {31,-41,59,26,-53,58,97,-93,-23,84};
+	int array5[] = {3,2,1,1,-8,1,1,2,3};
+	int array6[] = {12,99,99,-99,-27,0,0,0,-3,10};
+	int array7[] = {-2,1,-3,4,-1,2,1,-5,4};
 
-	printf("%d\n",max);
+	printf("%d\n",linear(16,array1));
+	printf("%d\n",linear(15,array2));
+	printf("%d\n",linear(12,array3));
+	printf("%d\n",linear(10,array4));
+	printf("%d\n",linear( 9,array5));
+	printf("%d\n",linear(10,array6));
+	printf("%d\n",linear( 9,array7));
 
 	return 0;
 }
